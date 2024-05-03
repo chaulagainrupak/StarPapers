@@ -1,0 +1,196 @@
+/* Apply background and text color to all elements */
+* {
+    background-color: #EAEAF2; /* Off-white background */
+    color: #333333;
+    font-family: 'Havenlativa', sans-serif;
+    box-sizing: border-box;
+}
+
+.pagetitle {
+    background-color: transparent;
+}
+
+/* Remove bullets from the list */
+.paperslist {
+    list-style-type: none;
+}
+
+/* Style the list items */
+.paperslist li {
+    margin-bottom: 5px;
+}
+
+/* Make the font size bigger for list items */
+.paperslist li a {
+    font-size: 26px;
+    text-decoration: none;
+    display: block;
+    background-color: #ffffff; /* White background for individual links */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Optional: Adjust the margin of the list title */
+.listtitle {
+    margin-top: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Add a separator line between content sections */
+.content {
+    border-top: 2px solid #cccccc;
+    display: flex;
+}
+
+/* Set the height of the banner */
+.banner {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #346FE1, #EAEAF2); /* Gradient from dark blue to light gray */
+    margin: -8px;
+    flex-direction: column;
+}
+
+/* Make the text in the banner section bigger and center it */
+.banner .pagetitle {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Set the width of left and right columns */
+.left-col,
+.right-col {
+    width: 50%;
+    padding: 20px;
+    height: 100%;
+}
+
+/* Style the ads container */
+.ads-container {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ffffff; /* White background for ads container */
+}
+
+/* Sticky footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #EAEAF2; /* Match background color */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add a separator between left and right containers */
+.separator {
+    border-right: 2px solid #cccccc;
+}
+
+/* Style the container */
+.container {
+    background-color: #ffffff; /* White background for generic container */
+    padding: 15px; /* Add padding to container */
+    border-radius: 10px; /* Add border radius to container */
+}
+
+/* Style the search input field */
+.search {
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.search button {
+    background-color: #346FE1;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search button:hover {
+    background-color: #26509e;
+}
+
+.search input[type="text"],
+.search button {
+    padding: 15px 30px; /* Adjusted padding for input and button */
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+  background-color: transparent;
+  z-index: 10;
+}
+nav.sticky{
+  padding: 15px 20px;
+  background: #4070f4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+nav .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+  background-color: transparent;
+}
+nav.sticky .logo a{
+  color: #fff;
+}
+.nav-content .nav-links{
+  display: flex;
+  background-color: transparent;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+  background-color: transparent;    
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: #0E2431;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+  background-color: transparent; 
+}
+ .nav-links li a:hover{
+   color: #4070f4;
+ }
+ nav.sticky .nav-links li a{
+   color: #fff;
+   transition: all 0.4s ease;
+}
+ nav.sticky .nav-links li a:hover{
+  color: #0E2431;
+}

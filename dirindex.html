@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Download: Cambridge IGCSE, O Level & A Level Past Papers (All Subjects)</title>
+  <meta name="description" content="Access and download FREE past exam papers for all Cambridge qualifications (IGCSE, O Level & A Level). Find past papers for May/June, Oct/Nov & Feb/March exams. StarPapers - Your one-stop shop for Cambridge Exam preparation. Get tips, marking schemes, and explanations.">
+  <meta name="keywords" content="Cambridge IGCSE, Cambridge O Level, Cambridge A Level, Past Papers, Free Download, May/June Exams, October/November Exams, February/March Exams, StarPapers, Exam Preparation, Marking Schemes, Explanations">
+  <meta name="author" content="StarPapers">
+  <meta property="og:title" content="Free Download: Cambridge Past Papers (IGCSE, O Level, A Level)" />
+  <meta property="og:description" content="Download FREE past exam papers for all Cambridge qualifications. StarPapers - Your guide to Cambridge Exam success." />
+    <link rel="stylesheet" href="/style.css">
+</head>
+	
+<script>
+    //     function search() {
+    //   var searchTerm = document.getElementById("searchInput").value.trim();
+    //   var elements = document.body.getElementsByTagName('*');
+    //   var regex = new RegExp(searchTerm, 'gi');
+
+    //   for (var i = 0; i < elements.length; i++) {
+    //     var element = elements[i];
+    //     if (element.nodeType === Node.TEXT_NODE && regex.test(element.nodeValue)) {
+    //       var newNode = document.createElement('span');
+    //       newNode.style.backgroundColor = 'yellow';
+    //       newNode.textContent = element.nodeValue.replace(regex, function(match) {
+    //         return match.toUpperCase();
+    //       });
+    //       element.parentNode.insertBefore(newNode, element);
+    //       element.parentNode.removeChild(element);
+    //     }
+    //   }
+    // }   
+
+        fetch('./dirs.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('dirs').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching text file:', error);
+            });
+
+        fetch('./files.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('files').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching text file:', error);
+            });
+</script>
+
+    <style>
+        /* Additional CSS for responsive layout */
+        @media screen and (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Change layout to column */
+            }
+            .left-col,
+            .right-col {
+                width: 100%; /* Set both columns to full width */
+            }
+            .right-col {
+                order: -1; /* Move right column with ads to the top */
+                margin-top: 20px; /* Add some space between the banner and ads */
+            }
+            .footer {
+                position: relative; /* Remove fixed position to place footer at the bottom */
+            }
+        }
+
+    </style>
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">Home</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Support Me</a></li>
+      </ul>
+    </div>
+  </nav>
+    <section class="banner">
+        <div class="pagetitle">Past Papers @ StarPapers!</div>
+    </section>
+
+    <section class="content">
+        <div class="left-col">
+            <h1 style="font-size: 36px;">Select your qualification</h1>
+            <ul class="paperslist" id="paperslist">
+                <li><a href=".."> &#8617;  Return Back </a></li>
+                <div id='dirs'></div>
+                <div id='files'></div>
+            </ul>
+            </div>
+        </div>
+         <div class="separator"></div>
+        <div class="right-col">
+            <div class="container ads-container">
+            	PLACE FOR ADs 
+            	<br>
+            	We won't show too much ADs or any inappropriate ADs
+            </div>
+            <div class="Ad">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>&copy; StarPapers. 2024 All Rights Reserved.</div>
+    </footer>
+</body>
+</html>
